@@ -1,0 +1,12 @@
+package model;
+
+public class Admin extends User {
+    public Admin(int id, String username) {
+        super(id, username, "admin");
+    }
+
+    @Override
+    public void showDashboard() {
+        System.out.println("Admin: " + username);
+    }
+}
